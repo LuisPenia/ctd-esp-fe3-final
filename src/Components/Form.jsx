@@ -1,23 +1,3 @@
-/*
-import React from "react";
-
-
-const Form = () => {
-  //Aqui deberan implementar el form completo con sus validaciones
-
-  return (
-    <div>
-      <form>
-      </form>
-    </div>
-  );
-};
-
-export default Form;
-*/
-
-//import React from 'react'
-
 import { useState } from "react"
 import Card from "./Card"
 
@@ -95,9 +75,6 @@ const Form = () => {
 }
 
 export default Form
-
-
-
 
 
 

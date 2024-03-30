@@ -26,11 +26,25 @@ h1{
 }
 
 nav{
+
   background-color: aqua;
   display: flex;
   width: 100vw;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding: 1rem;
+}
+
+nav > button{
+  width: 100px; /* Tamaño automático (tamaño real) */
+  height: 40px; /* Tamaño automático (tamaño real) */
+  background: none;
+  margin: none;
+  border: none;
+}
+
+nav > button >img{
+  width: 80px; /* Tamaño automático (tamaño real) */
+  height: 40px; /* Tamaño automático (tamaño real) */
 }
 
 a{
@@ -46,20 +60,32 @@ a:hover{
 footer {
   background-color:coral;
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   text-align: center;
+  align-items: flex-start;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   margin-top: 2rem;
 }
 
 footer > img{
-  width: 200px;
+  width: 250px;
+  height: 50px;
   margin: 0;
 }
+
+footer > div >img{
+  
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  filter: invert(100%);
+}
+
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
@@ -143,36 +169,7 @@ tr:nth-child(even) {
   height: 40px; /* Tamaño automático (tamaño real) */
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.dentistas{
-  width: 80vw;
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: center;
-   
-}
-
-.dentista{
-  width: 200px;
-  padding: 10px;
-  border: solid 1px green;
-  margin: 10px;
-  justify-content: center;
-
-}
-
 .imagenDentista{
   width: 180px; /* Tamaño automático (tamaño real) */
   height: 180px; /* Tamaño automático (tamaño real) */
-
-  
-}
-
-p{
-  font-size:small;
 }

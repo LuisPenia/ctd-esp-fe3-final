@@ -17,7 +17,6 @@ const Card = ({item}) => {
           <img className='imagenDentista' src="../../public/images/doctor.jpg"/>
           <p>{item.name}</p>
           <p>{item.username}</p>
-          <p>{item.id}</p>
         <button onClick={addFav} className="favButton">Add fav</button>
     </div>
     </Link>
