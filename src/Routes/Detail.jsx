@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
+  
+  const param = useParams();
+  const [dentista, setDentista] = useState({});
+  console.log("id: " + param.id)
+
+  
+  useEffect (() => {
+    // Hacer la solicitud HTTP para obtener los datos JSON
+    fetch('https://jsonplaceholder.typicode.com/users/'+ param.id)
+      .then(response => response.json())
+      .then(data => setDentista(data))
+      console.log("dentista" + dentista)
+      //.catch(error => console.error('Error al obtener datos:', error));
+  }, []);
+  
+  console.log(dentista)
 
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
 
@@ -21,10 +38,10 @@ const Detail = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Nom</td>
-            <td>Dato 2</td>
-            <td>Dato 1</td>
-            <td>Dato 2</td>
+            <td>{dentista.name}</td>
+            <td>{dentista.email}</td>
+            <td>{dentista.phone}</td>
+            <td>{dentista.website}</td>
           </tr>
         </tbody>
         </table>
