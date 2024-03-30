@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,8 +26,9 @@ h1{
 }
 
 nav{
+  background-color: aqua;
   display: flex;
-  width: 80vw;
+  width: 100vw;
   justify-content: flex-start;
   padding: 1rem;
 }
@@ -41,6 +44,7 @@ a:hover{
 } 
 
 footer {
+  background-color:coral;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -119,4 +123,56 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+
+.boton-con-imagen {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: none; /* Color de fondo del botón */
+  border: none;
+  border-radius: 50%; /* Bordes redondeados */
+  color: #fff; /* Color del texto */
+  font-size: none;
+  cursor: pointer;
+}
+
+.boton-con-imagen img {
+  width: 80px; /* Tamaño automático (tamaño real) */
+  height: 40px; /* Tamaño automático (tamaño real) */
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dentistas{
+  width: 80vw;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+   
+}
+
+.dentista{
+  width: 200px;
+  padding: 10px;
+  border: solid 1px green;
+  margin: 10px;
+  justify-content: center;
+
+}
+
+.imagenDentista{
+  width: 180px; /* Tamaño automático (tamaño real) */
+  height: 180px; /* Tamaño automático (tamaño real) */
+
+  
+}
+
+p{
+  font-size:small;
 }
