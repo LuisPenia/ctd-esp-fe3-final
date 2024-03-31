@@ -26,8 +26,23 @@ h1{
 }
 
 nav{
+  background-color: rgb(133, 196, 196);
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  padding: 1rem;
+}
 
-  background-color: aqua;
+.navLight{
+  background-color: rgb(133, 196, 196);
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.navDark{
+  background-color: rgb(3, 57, 57);
   display: flex;
   width: 100vw;
   justify-content: flex-end;
