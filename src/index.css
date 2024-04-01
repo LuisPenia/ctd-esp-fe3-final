@@ -34,22 +34,30 @@ nav{
 }
 
 .navLight{
-  background-color: rgb(133, 196, 196);
+  background-color: #50B4BF;
+  color: #000;
   display: flex;
   width: 100vw;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .navDark{
-  background-color: rgb(3, 57, 57);
+  background-color: #0C2840;
+  color:antiquewhite;
   display: flex;
   width: 100vw;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1rem;
 }
 
-nav > button{
+nav > div{
+  display: flex;
+}
+
+
+
+nav > div > button{
   width: 100px; /* Tamaño automático (tamaño real) */
   height: 40px; /* Tamaño automático (tamaño real) */
   background: none;
@@ -57,9 +65,29 @@ nav > button{
   border: none;
 }
 
-nav > button >img{
+nav > div > button >img{
   width: 80px; /* Tamaño automático (tamaño real) */
   height: 40px; /* Tamaño automático (tamaño real) */
+}
+
+.aLight{
+  display: flex; /* Utiliza Flexbox para centrar verticalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+  justify-content: left;
+  text-align: center;
+}
+
+.aDark{
+  display: flex; /* Utiliza Flexbox para centrar verticalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+  color: azure;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
 }
 
 a{
@@ -68,12 +96,43 @@ a{
   margin: 5px;
   cursor: pointer;
 }
+
 a:hover{
   color: rgb(136, 136, 136);
 } 
 
 footer {
   background-color:coral;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.footerLight {
+  background-color:coral;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.footerDark {
+  background-color: darkslategray;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -93,12 +152,30 @@ footer > img{
   margin: 0;
 }
 
-footer > div >img{
-  
+.largeimgLight {
+  width: 250px;
+  height: 50px;
+  margin: 0;
+}
+
+.largeimgDark{
+  width: 250px;
+  height: 50px;
+  margin: 0;
+  filter: invert(100%);
+}
+
+.imgLight {
   width: 30px;
   height: 30px;
   margin: 10px;
   filter: invert(100%);
+}
+
+.imgDark{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
 }
 
 footer > p{
@@ -188,3 +265,12 @@ tr:nth-child(even) {
   width: 180px; /* Tamaño automático (tamaño real) */
   height: 180px; /* Tamaño automático (tamaño real) */
 }
+
+.homeLight {
+  background-color: whitesmoke ;
+}
+
+.homeDark{
+  background-color: #4f4f52 ;
+}
+

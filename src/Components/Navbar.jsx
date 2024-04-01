@@ -21,14 +21,17 @@ const Navbar = () => {
   return (
     
     <nav className = {`nav${theme}`}>
-      <Link to="/home"      >Home</Link>
-      <Link to="/contacto"  >Contact</Link>
-      <Link to="/favoritos" >Favs</Link>
-
-      <button id="alternar-boton" onClick={toggleTheme}>
-        <img src={imagen} onClick={alternarImagen} />
-      </button>
-
+      <div>
+        <p> <b>D</b><b>H</b> Odonto</p>
+      </div>
+      <div>
+        <Link to="/home"      className = {`a${theme}`}>Home</Link>
+        <Link to="/contacto"  className = {`a${theme}`}>Contact</Link>
+        <Link to="/favoritos" className = {`a${theme}`}>Favs</Link>
+        <button id="alternar-boton" onClick={toggleTheme}>
+          <img src={imagen} onClick={alternarImagen} />
+        </button>
+      </div>
       <Outlet/>
     </nav>  
   )

@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from './utils/ThemeContext';
 
 const Footer = () => {
+  const {theme} = useContext (ThemeContext);
+
   return (
-    <footer>
-        <img src="../../public/images/DH.png" alt='DH-logo' />
+    <footer className = {`footer${theme}`}>
+        <img className = {`largeimg${theme}`} src="../../public/images/DH.png" alt='DH-logo' />
         <div>
-          <img src="../../public/images/ico-facebook.png"    alt='FAC-logo' />
-          <img src="../../public/imageS/ico-instagram.png"   alt='INS-logo' />
-          <img src="../../public/images/ico-whatsapp.png"    alt='WHA-logo' />
-          <img src="../../public/images/ico-tiktok.png"      alt='TIK-logo' />
+          <img className = {`img${theme}`} src="../../public/images/ico-facebook.png"    alt='FAC-logo' />
+          <img className = {`img${theme}`} src="../../public/imageS/ico-instagram.png"   alt='INS-logo' />
+          <img className = {`img${theme}`} src="../../public/images/ico-whatsapp.png"    alt='WHA-logo' />
+          <img className = {`img${theme}`} src="../../public/images/ico-tiktok.png"      alt='TIK-logo' />
         </div>
     </footer>
   )
